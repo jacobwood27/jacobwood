@@ -30,3 +30,6 @@ gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
 #Cover vulnerability
 gem "activesupport", "~>4.1.11"
+
+#Remote theme
+gem "jekyll-remote-theme"
