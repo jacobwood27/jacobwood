@@ -11,5 +11,8 @@ hidden: true
 * [Ginger Snaps](https://thevegan8.com/vegan-coconut-butter-gingersnaps-and-tazo-teas/)
 * [Oatmeal chocolate chip](https://itdoesnttastelikechicken.com/vegan-oatmeal-chocolate-chip-cookies/)
 
+A printout of the recipes (in QR code form) will also be sent along with a handwritten "Happy Holidays!" note. The printout looks like this:
+![Christmas cookie note](/assets/cookie_note.png)
 
+Happy Holidays everyone!
 
