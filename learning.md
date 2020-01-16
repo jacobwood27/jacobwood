@@ -34,6 +34,7 @@ Microcourses taken:
 
 | Course Name                   | Institution  | Instructor(s) | Platform     | Date          | Link                                                                   |
 |-------------------------------|--------------|---------------|--------------|---------------|------------------------------------------------------------------------|
+| Feature Engineering           | Kaggle       | Mat Leonard   | Kaggle       | In progress   | [Link](https://www.kaggle.com/learn/feature-engineering)               |
 | Data Visualization            | Kaggle       | Alexis Cook   | Kaggle       | January 2020  | [Link](https://www.kaggle.com/learn/data-visualization)                |
 | Intermediate Machine Learning | Kaggle       | Alexis Cook   | Kaggle       | January 2020  | [Link](https://www.kaggle.com/learn/intermediate-machine-learning)     |
 | Into to Machine Learning      | Kaggle       | Dan Becker    | Kaggle       | January 2020  | [Link](https://www.kaggle.com/learn/intro-to-machine-learning)         |
@@ -47,7 +48,6 @@ Microcourses planned:
 | Course Name                     | Institution | Instructor(s)               | Platform | Date            | Link                                                                 |
 |---------------------------------|-------------|-----------------------------|----------|-----------------|----------------------------------------------------------------------|
 | Pandas                          | Kaggle      | Aleksey Bilogur             | Kaggle   | Not yet started | [Link](https://www.kaggle.com/learn/pandas)                          |
-| Feature Engineering             | Kaggle      | Mat Leonard                 | Kaggle   | In progress     | [Link](https://www.kaggle.com/learn/feature-engineering)             |
 | Deep Learning                   | Kaggle      | Dan Becker                  | Kaggle   | Not yet started | [Link](https://www.kaggle.com/learn/deep-learning)                   |
 | Into to SQL                     | Kaggle      | Alexis Cook, Rachael Tatman | Kaggle   | Not yet started | [Link](https://www.kaggle.com/learn/intro-to-sql)                    |
 | Advanced SQL                    | Kaggle      | Alexis Cook                 | Kaggle   | Not yet started | [Link](https://www.kaggle.com/learn/advanced-sql)                    |
