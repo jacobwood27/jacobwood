@@ -1,6 +1,6 @@
 var store = [{
         "title": "Morning Routine Plans",
-        "excerpt":"Things I want to include in some form in a morning routine:     Exercise   Mindfulness meditation   Gratitude journaling   Content creation   Learning   Coffee  ","categories": ["planning"],
+        "excerpt":"Things I want to include in some form in a morning routine: Exercise Mindfulness meditation Gratitude journaling Content creation Learning Coffee I think things will have to work into a weekly schedule that I hope to continually refine. How does something like this sound? Monday Yoga Coffee Gratitude journaling Learning...","categories": ["planning"],
         "tags": [],
         "url": "http://localhost:4000/planning/morning-routine/",
         "teaser":null},{
