@@ -10,7 +10,7 @@ toc_sticky: false
 
 I am adopting a philosophy of "learn the basics often" in an attempt to insure my practices coincide with best practices. Occasionally it is desirable to learn a task in a novel way and contrast the approach with the industry standard approach as a means of potentially evolving the standard approach but this philosophy should provide a chance to reflect and redirect when necessary.
 
-This a list of courses I have taken and look forward to adding to:
+### This a list of courses I have taken and look forward to adding to:  
 
 | Course Name                                 | Institution              | Instructor(s)                       | Platform | Date          | Link                                                                           |
 |---------------------------------------------|--------------------------|-------------------------------------|----------|---------------|--------------------------------------------------------------------------------|
@@ -21,48 +21,52 @@ This a list of courses I have taken and look forward to adding to:
 | Hypersonics – from Shock Waves to Scramjets | University of Queensland | David J. Mee et al                  | edX      | December 2018 | [Link](https://www.edx.org/course/hypersonics-from-shock-waves-to-scramjets-2) |
 
 
-Planned to take in the future (in this order):
+### Planned to take in the future (in this order):  
 
-| Course Name                                             | Institution | Instructor(s)              | Platform | Date            | Link                                                                                  |
-|---------------------------------------------------------|-------------|----------------------------|----------|-----------------|---------------------------------------------------------------------------------------|
-| Machine Learning Fundamentals                           | UCSD        | Sanjoy Dasgupta            | edX      | In progress     | [Link](https://courses.edx.org/courses/course-v1:UCSanDiegoX+DSE220x+3T2019a/course/) |
-| Python for Data Science                                 | UCSD        | Ilkay Altintas, Leo Porter | edX      | Not yet started | [Link](https://www.edx.org/course/python-for-data-science-2)                          |
-| Probability and Statistics in Data Science using Python | UCSD        | Alan Orlitsky, Yoav Freund | edX      | Not yet started | [Link](https://www.edx.org/course/probability-and-statistics-in-data-science-using-p) |
-| Big Data Analytics Using Spark                          | UCSD        | Yoav Freund                | edX      | Not yet started | [Link](https://www.edx.org/course/big-data-analytics-using-spark)                     |
-
-Microcourses taken:  
-
-| Course Name                   | Institution  | Instructor(s) | Platform     | Date          | Link                                                                   |
-|-------------------------------|--------------|---------------|--------------|---------------|------------------------------------------------------------------------|
-| Into to SQL                     | Kaggle      | Alexis Cook, Rachael Tatman | Kaggle   | January 2020 | [Link](https://www.kaggle.com/learn/intro-to-sql)                    |
-| Advanced SQL                    | Kaggle      | Alexis Cook                 | Kaggle   | January 2020 | [Link](https://www.kaggle.com/learn/advanced-sql)                    |
-| Geospatial Analysis             | Kaggle      | Alexis Cook, Jessica Li     | Kaggle   | January 2020 | [Link](https://www.kaggle.com/learn/geospatial-analysis)             |
-| Pandas                          | Kaggle      | Aleksey Bilogur             | Kaggle   | January 2020 | [Link](https://www.kaggle.com/learn/pandas)                          |
-| Feature Engineering             | Kaggle      | Mat Leonard                 | Kaggle   | January 2020 | [Link](https://www.kaggle.com/learn/feature-engineering)             |
-| Deep Learning                   | Kaggle      | Dan Becker                  | Kaggle   | January 2020 | [Link](https://www.kaggle.com/learn/deep-learning)                   |
-| Data Visualization            | Kaggle       | Alexis Cook   | Kaggle       | January 2020  | [Link](https://www.kaggle.com/learn/data-visualization)                |
-| Intermediate Machine Learning | Kaggle       | Alexis Cook   | Kaggle       | January 2020  | [Link](https://www.kaggle.com/learn/intermediate-machine-learning)     |
-| Into to Machine Learning      | Kaggle       | Dan Becker    | Kaggle       | January 2020  | [Link](https://www.kaggle.com/learn/intro-to-machine-learning)         |
-| Python                        | Kaggle       | Colin Morris  | Kaggle       | January 2020  | [Link](https://www.kaggle.com/learn/python)                            |
-| Linux Journey                 | LinuxJourney | Open Source   | LinuxJourney | January 2020  | [Link](https://linuxjourney.com/)                                      |
-| Simulink Onramp               | Mathworks    | Mathworks     | Matlab       | November 2019 | [Link](https://www.mathworks.com/learn/tutorials/simulink-onramp.html) |
+| Course Name                                                       | Institution | Instructor(s)                                       | Platform | Date            | Link                                                                         |
+|-------------------------------------------------------------------|-------------|-----------------------------------------------------|----------|-----------------|------------------------------------------------------------------------------|
+| Probability - The Science of Uncertainty and Data                 | MIT         | Prof. John Tsitsiklis, Dr. Sudarsan, Dr. Karene     | edX      | In progress     | [Link](https://courses.edx.org/courses/course-v1:MITx+6.431x+1T2020/course/) |
+| Machine Learning with Python: from Linear Models to Deep Learning | MIT         | Regina Barzilay, Tommi Jaakkola, Karene Chu         | edX      | Not yet started | [Link](https://www.edx.org/course/python-for-data-science-2)                 |
+| Fundamentals of Statistics                                        | MIT         | Philippe Rigollet, Jan-Christian Hütter, Karene Chu | edX      | Not yet started | [Link](https://www.edx.org/course/fundamentals-of-statistics)                |
+| Data Analysis for Social Scientists                               | MIT         | Esther Duflo, Sara Fisher Ellison                   | edX      | Not yet started | [Link](https://www.edx.org/course/data-analysis-for-social-scientists)       |
 
 
-Microcourses planned:  
+### Microcourses taken:  
 
-| Course Name                     | Institution | Instructor(s)               | Platform | Date            | Link                                                                 |
-|---------------------------------|-------------|-----------------------------|----------|-----------------|----------------------------------------------------------------------|
-| Microchallenges                 | Kaggle      | Dan Becker                  | Kaggle   | Not yet started | [Link](https://www.kaggle.com/learn/microchallenges)                 |
-| Machine Learning Explainability | Kaggle      | Dan Becker                  | Kaggle   | Not yet started | [Link](https://www.kaggle.com/learn/machine-learning-explainability) |
+| Course Name                     | Institution  | Instructor(s)               | Platform     | Date          | Link                                                                   |
+|---------------------------------|--------------|-----------------------------|--------------|---------------|------------------------------------------------------------------------|
+| Microchallenges                 | Kaggle       | Dan Becker                  | Kaggle       | January 2020  | [Link](https://www.kaggle.com/learn/microchallenges)                   |
+| Machine Learning Explainability | Kaggle       | Dan Becker                  | Kaggle       | January 2020  | [Link](https://www.kaggle.com/learn/machine-learning-explainability)   |
+| Into to SQL                     | Kaggle       | Alexis Cook, Rachael Tatman | Kaggle       | January 2020  | [Link](https://www.kaggle.com/learn/intro-to-sql)                      |
+| Advanced SQL                    | Kaggle       | Alexis Cook                 | Kaggle       | January 2020  | [Link](https://www.kaggle.com/learn/advanced-sql)                      |
+| Geospatial Analysis             | Kaggle       | Alexis Cook, Jessica Li     | Kaggle       | January 2020  | [Link](https://www.kaggle.com/learn/geospatial-analysis)               |
+| Pandas                          | Kaggle       | Aleksey Bilogur             | Kaggle       | January 2020  | [Link](https://www.kaggle.com/learn/pandas)                            |
+| Feature Engineering             | Kaggle       | Mat Leonard                 | Kaggle       | January 2020  | [Link](https://www.kaggle.com/learn/feature-engineering)               |
+| Deep Learning                   | Kaggle       | Dan Becker                  | Kaggle       | January 2020  | [Link](https://www.kaggle.com/learn/deep-learning)                     |
+| Data Visualization              | Kaggle       | Alexis Cook                 | Kaggle       | January 2020  | [Link](https://www.kaggle.com/learn/data-visualization)                |
+| Intermediate Machine Learning   | Kaggle       | Alexis Cook                 | Kaggle       | January 2020  | [Link](https://www.kaggle.com/learn/intermediate-machine-learning)     |
+| Into to Machine Learning        | Kaggle       | Dan Becker                  | Kaggle       | January 2020  | [Link](https://www.kaggle.com/learn/intro-to-machine-learning)         |
+| Python                          | Kaggle       | Colin Morris                | Kaggle       | January 2020  | [Link](https://www.kaggle.com/learn/python)                            |
+| Linux Journey                   | LinuxJourney | Open Source                 | LinuxJourney | January 2020  | [Link](https://linuxjourney.com/)                                      |
+| Simulink Onramp                 | Mathworks    | Mathworks                   | Matlab       | November 2019 | [Link](https://www.mathworks.com/learn/tutorials/simulink-onramp.html) |
 
+
+### Microcourses planned:  
+
+| Course Name | Institution | Instructor(s) | Platform | Date | Link |
+|-------------|-------------|---------------|----------|------|------|
+|             |             |               |          |      |      |
 
 
 Some notes:  
 
 Would like to take courses on increasing typing and reading speed.
 
-UCSD edX courses make up the [Data Science MicroMasters](https://courses.edx.org/dashboard/programs/482dee71-e4b9-4b42-a47b-3e16bb69e8f2/). Note: audited courses do not receive access to homework questions or assessments on the edX platform, so these courses are far less thorough than you might hope.
-  
+MIT edX courses make up the [Statistics and Data Science MicroMasters](https://courses.edx.org/dashboard/programs/71c95834-f6df-4f78-8cd7-c6461dd9b1d4/). 
+
+
+
+
 Mit OCW courses make up the [Bachelor of Science in Computation and Cognition (Course 6-9)](http://catalog.mit.edu/degree-charts/computation-cognition-6-9/) from MIT  
 "The joint bachelor’s program in 6-9 is designed to give students access to foundational and advanced material in electrical engineering and computer science, as well as in the architecture, circuits, and physiology of the brain, and computational approaches to cognition and intelligence."
 
