@@ -1,0 +1,4 @@
+Sitemap: http://jacobwood.xyz/sitemap.xml
+
+User-agent: *
+Disallow:
