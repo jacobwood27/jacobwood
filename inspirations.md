@@ -1,46 +1,24 @@
----
-layout: splash
-classes: wide
-title:  "Inspirational People"
-date:   2019-12-06 14:32:43 -0800
-categories: people
-toc: true
-toc_sticky: true
----
+@def title = "Inspirations"
 
-These people are pretty impressive:
+I owe a lot to these people:
 
 ## Erin Menefee
+Erin is my fiancé and one of the hardest working people I know. She dedicates herself wholeheartedly to her physical therapy patients and clients, often spending time off the clock to help in any way she can. She also runs relentlessly. She qualified and competed in the 2020 Olympic Marathon Trials and hopes to qualify for the 2024 Trials.  
 
-![Erin running](/assets/images/erin_running.jpeg){: .align-left width="360px"} 
-
-Some text here adsfknjasd asdkljfasfk  alksd aldjasdkfba akdsadf akdakdf jsdhfasdkjfhahsdk fcajkdsfak dakjdshfjackasdhfjkdf acf acdjfa djcfasdkjf cdasfadskjh faskdjcfgadsk cadsjhgf cadhfakcdfaskjdhgfdsjkhfgc ajskdfgca dfkajh dckajhsgcfskdahg fhadjskc fgadskjfc
-
-Some text here adsfknjasd asdkljfasfk  alksd aldjasdkfba akdsadf akdakdf jsdhfasdkjfhahsdk fcajkdsfak dakjdshfjackasdhfjkdf acf acdjfa djcfasdkjf cdasfadskjh faskdjcfgadsk cadsjhgf cadhfakcdfaskjdhgfdsjkhfgc ajskdfgca dfkajh dckajhsgcfskdahg fhadjskc fgadskjfc
+From Erin I hope to learn compassion and dedication. 
 
 ## My Family
-![My family](/assets/images/mom_dad_sean.jpg){: .align-left width="360px"} 
-Some text here adsfknjasd asdkljfasfk  alksd aldjasdkfba akdsadf akdakdf jsdhfasdkjfhahsdk fcajkdsfak dakjdshfjackasdhfjkdf acf acdjfa djcfasdkjf cdasfadskjh faskdjcfgadsk cadsjhgf cadhfakcdfaskjdhgfdsjkhfgc ajskdfgca dfkajh dckajhsgcfskdahg fhadjskc fgadskjfc
+My family has been through some challenging circumstances and has always responded with love and grace. Nothing has been insurmountable.  
 
-Some text here adsfknjasd asdkljfasfk  alksd aldjasdkfba akdsadf akdakdf jsdhfasdkjfhahsdk fcajkdsfak dakjdshfjackasdhfjkdf acf acdjfa djcfasdkjf cdasfadskjh faskdjcfgadsk cadsjhgf cadhfakcdfaskjdhgfdsjkhfgc ajskdfgca dfkajh dckajhsgcfskdahg fhadjskc fgadskjfc
+From my family I hope to learn love and resilience.
 
-## 80,000 hours
-![80,000 Hours logo](/assets/images/80000_hours.png){: .align-left width="360px"} 
-Some text here adsfknjasd asdkljfasfk  alksd aldjasdkfba akdsadf akdakdf jsdhfasdkjfhahsdk fcajkdsfak dakjdshfjackasdhfjkdf acf acdjfa djcfasdkjf cdasfadskjh faskdjcfgadsk cadsjhgf cadhfakcdfaskjdhgfdsjkhfgc ajskdfgca dfkajh dckajhsgcfskdahg fhadjskc fgadskjfc
 
-Some text here adsfknjasd asdkljfasfk  alksd aldjasdkfba akdsadf akdakdf jsdhfasdkjfhahsdk fcajkdsfak dakjdshfjackasdhfjkdf acf acdjfa djcfasdkjf cdasfadskjh faskdjcfgadsk cadsjhgf cadhfakcdfaskjdhgfdsjkhfgc ajskdfgca dfkajh dckajhsgcfskdahg fhadjskc fgadskjfc
+## Lex Fridman
+Lex produces the Lex Fridman podcast, among other things. He approaches every issue in his wide ranging conversations from the viewpoint that *love will prevail*. 
 
+From Lex I hope to learn optimism and curiosity.
 
 ## Sean Carroll
-![Sean Carroll](/assets/images/sean_carroll_mindscape.jpg){: .align-left width="360px"} 
-Some text here adsfknjasd asdkljfasfk  alksd aldjasdkfba akdsadf akdakdf jsdhfasdkjfhahsdk fcajkdsfak dakjdshfjackasdhfjkdf acf acdjfa djcfasdkjf cdasfadskjh faskdjcfgadsk cadsjhgf cadhfakcdfaskjdhgfdsjkhfgc ajskdfgca dfkajh dckajhsgcfskdahg fhadjskc fgadskjfc
+Sean is a theoretical physicist at Caltech and producer of the Mindscape podcast. His podcast series interviews people from a variety of fields and Sean brings out the best in each guest.
 
-Some text here adsfknjasd asdkljfasfk  alksd aldjasdkfba akdsadf akdakdf jsdhfasdkjfhahsdk fcajkdsfak dakjdshfjackasdhfjkdf acf acdjfa djcfasdkjf cdasfadskjh faskdjcfgadsk cadsjhgf cadhfakcdfaskjdhgfdsjkhfgc ajskdfgca dfkajh dckajhsgcfskdahg fhadjskc fgadskjfc
-
-
-## Craig from Wichita State University Wind Tunnel
-![Walter H. Beech Wind Tunnel Flow Visualization](/assets/images/walterbeech_windtunnel.jpg){: .align-left width="360px"} 
-Some text here adsfknjasd asdkljfasfk  alksd aldjasdkfba akdsadf akdakdf jsdhfasdkjfhahsdk fcajkdsfak dakjdshfjackasdhfjkdf acf acdjfa djcfasdkjf cdasfadskjh faskdjcfgadsk cadsjhgf cadhfakcdfaskjdhgfdsjkhfgc ajskdfgca dfkajh dckajhsgcfskdahg fhadjskc fgadskjfc
-
-Some text here adsfknjasd asdkljfasfk  alksd aldjasdkfba akdsadf akdakdf jsdhfasdkjfhahsdk fcajkdsfak dakjdshfjackasdhfjkdf acf acdjfa djcfasdkjf cdasfadskjh faskdjcfgadsk cadsjhgf cadhfakcdfaskjdhgfdsjkhfgc ajskdfgca dfkajh dckajhsgcfskdahg fhadjskc fgadskjfc
-
+From Sean I hope to learn openness and appreciation.
