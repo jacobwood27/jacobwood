@@ -21,4 +21,4 @@ In a similar vein, I've attempted to keep a list of scored and ranked books I've
 <!-- \fig{./book_rate_hist.svg} -->
 
 
-<!-- \tableinput{}{./books_show.csv}  -->
+\tableinput{}{./books_show.csv}
