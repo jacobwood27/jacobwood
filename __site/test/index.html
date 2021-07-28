@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>DG Viz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js"></script>
+  <link
+  href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css"
+  rel="stylesheet"
+  />
+  <style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, Sans-serif;
+  }
+
+  #map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  h2 {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #2dc4b2;
+  }
+
+  #console {
+    position: absolute;
+    margin: 10px;
+    width: 240px;
+    background-color: white;
+    padding: 10px 20px;
+  }
+
+  .session {
+    margin-bottom: 20px;
+  }
+
+  .row {
+    height: 20px;
+    width: 100%;
+  }
+
+  .colors {
+    background: linear-gradient(
+      to right,
+      #2dc4b2,
+      #3bb3c3,
+      #669ec4,
+      #8b88b6,
+      #a2719b,
+      #aa5e79
+      );
+    margin-bottom: 5px;
+  }
+
+  .label {
+    width: 15%;
+    display: inline-block;
+    text-align: center;
+  }
+</style>
+</head>
+
+<body>
+  <div id="map"></div>
+  <div id="console">
+    <h1>Motor vehicle collisions</h1>
+    <p>
+      Data:
+      <a href="https://data.cityofnewyork.us/Public-Safety/NYPD-Motor-Vehicle-Collisions/h9gi-nx95">
+      Motor vehicle collision injuries and death 
+      </a>
+      in NYC, Jan 2016
+    </p>
+    <div class="session">
+      <h2>Casualty</h2>
+      <div class="row colors"></div>
+      <div class="row labels">
+        <div class="label">0</div>
+        <div class="label">1</div>
+        <div class="label">2</div>
+        <div class="label">3</div>
+        <div class="label">4</div>
+        <div class="label">5+</div>
+      </div>
+    </div>
+    <div class="session">
+      <h2>Hour: <label id="active-hour">12PM</label></h2>
+      <input
+      id="slider"
+      class="row"
+      type="range"
+      min="0"
+      max="23"
+      step="1"
+      value="12"
+      />
+    </div>
+    <div class="session">
+      <h2>Show?</h2>
+      <div class="row">
+        <input id="throws" type="checkbox" name="toggle" value="all" checked="checked"/>
+        <label for="throws">Throws</label>
+      </div>
+      <div class="row">
+        <input id="discs" type="checkbox" name="toggle" value="discs" checked="checked"/>
+        <label for="discs">Discs</label>
+      </div>
+      <div class="row">
+        <input id="tees" type="checkbox" name="toggle" value="tees" checked="checked"/>
+        <label for="tees">Tees</label>
+      </div>
+      <div class="row">
+        <input id="pins" type="checkbox" name="toggle" value="pins" checked="checked"/>
+        <label for="pins">Pins</label>
+      </div>
+      </div>
+    </div>
+  </div>
+    <!-- <script>
+      mapboxgl.accessToken = 'pk.eyJ1Ijoiandvb2QyNyIsImEiOiJja3Jtajh3aXYxcXRsMnFwZWc0bnJxbDVkIn0.rcjWqatkRc5dLOH0G06z9Q';
+      var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/satellite-v9',
+        center: [-117.058426, 33.079323],
+        zoom: 13
+      });
+
+      map.on('load', function () {
+        var filterHour = ['==', ['number', ['get', 'Hour']], 12];
+        var filterDay = ['!=', ['string', ['get', 'Day']], 'placeholder'];
+
+        map.addLayer({
+          id: 'collisions',
+          type: 'circle',
+          source: {
+            type: 'geojson',
+            data: './map1.geojson' // replace this with the url of your own geojson
+          },
+          paint: {
+            'circle-radius': [
+              'interpolate',
+              ['linear'],
+              ['number', ['get', 'Casualty']],
+              0,
+              4,
+              5,
+              24
+            ],
+            'circle-color': [
+              'interpolate',
+              ['linear'],
+              ['number', ['get', 'Casualty']],
+              0,
+              '#2DC4B2',
+              1,
+              '#3BB3C3',
+              2,
+              '#669EC4',
+              3,
+              '#8B88B6',
+              4,
+              '#A2719B',
+              5,
+              '#AA5E79'
+            ],
+            'circle-opacity': 0.8
+          },
+          'filter': ['all', filterHour, filterDay]
+        });
+
+        // update hour filter when the slider is dragged
+        document
+          .getElementById('slider')
+          .addEventListener('input', function (e) {
+            var hour = parseInt(e.target.value);
+            // update the map
+            filterHour = ['==', ['number', ['get', 'Hour']], hour];
+            map.setFilter('collisions', ['all', filterHour, filterDay]);
+
+            // converting 0-23 hour to AMPM format
+            var ampm = hour >= 12 ? 'PM' : 'AM';
+            var hour12 = hour % 12 ? hour % 12 : 12;
+
+            // update text in the UI
+            document.getElementById('active-hour').innerText = hour12 + ampm;
+          });
+
+        document
+          .getElementById('filters')
+          .addEventListener('change', function (e) {
+            var day = e.target.value;
+            // update the map filter
+            if (day === 'all') {
+              filterDay = ['!=', ['string', ['get', 'Day']], 'placeholder'];
+            } else if (day === 'weekday') {
+              filterDay = [
+                'match',
+                ['get', 'Day'],
+                ['Sat', 'Sun'],
+                false,
+                true
+              ];
+            } else if (day === 'weekend') {
+              filterDay = [
+                'match',
+                ['get', 'Day'],
+                ['Sat', 'Sun'],
+                true,
+                false
+              ];
+            } else {
+              console.log('error');
+            }
+            // map.setFilter('collisions', ['all', filterHour, filterDay]);
+          });
+      });
+    </script> -->
+    <script>
+      mapboxgl.accessToken = 'pk.eyJ1Ijoiandvb2QyNyIsImEiOiJja3Jtajh3aXYxcXRsMnFwZWc0bnJxbDVkIn0.rcjWqatkRc5dLOH0G06z9Q';
+      var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/satellite-v9',
+        center: [-117.058426, 33.079323],
+        zoom: 16
+      });
+      
+      async function fetchData () {
+        try {
+          const response = await fetch('test_vis.json');
+          const data = await response.json();
+          return data;
+        } catch (error) {
+          console.error(error);
+        }
+      }
+
+      var filterGroup = document.getElementById('filters');
+      fetchData().then((data) => {
+
+        map.on('load', function () {
+            
+            map.addSource('round_json', {
+              'type': 'geojson',
+              'data': data});
+
+            map.addLayer({
+              'id': 'tees->pins',
+              'type': 'line',
+              'source': 'round_json',
+              'layout': {
+                'line-join': 'round',
+                'line-cap': 'round'},
+                'paint': {
+                  'line-color': '#BF93E4',
+                  'line-width': 1},
+                  'filter': ['==', 'thing', 'tee->pin']
+                });
+
+            map.addLayer({
+              'id': 'tees',
+              'type': 'symbol',
+              'source': 'round_json',
+              'paint': {
+                'text-color': '#fff',
+                'text-halo-color': '#000',
+                'text-halo-width': 2},
+                'layout': {
+                  'text-field': ['get', 'name']},
+                  'filter': ['==', 'thing', 'tee']
+                });
+
+            map.addLayer({
+              'id': 'pins',
+              'type': 'symbol',
+              'source': 'round_json',
+              'paint': {
+                'text-color': '#000',
+                'text-halo-color': '#fff',
+                'text-halo-width': 2},
+                'layout': {
+                  'text-field': ['get', 'name']},
+                  'filter': ['==', 'thing', 'pin']
+                });
+
+            map.addLayer({
+              'id': 'throws',
+              'type': 'line',
+              'source': 'round_json',
+              'layout': {
+                'line-join': 'round',
+                'line-cap': 'round'},
+                'paint': {
+                  'line-color': [
+                  'interpolate',
+                  ['linear'],
+                  ['number', ['get', 'hole_res']],
+                  -10,
+                  'green',
+                  -1,
+                  'green',
+                  0,
+                  'blue',
+                  1,
+                  'red',
+                  10,
+                  'red'
+                  ],
+                  'line-width': 5},
+                  'filter': ['==', 'thing', 'throw']
+                });
+
+            Promise.all(
+              data.discs.map(img => new Promise((resolve, reject) => {
+                map.loadImage(img.image, function (error, res) {
+                  map.addImage(img.id, res)
+                  resolve();
+                })
+              }))
+              )
+            .then(
+              map.addLayer({
+                'id': 'discs',
+                'type': 'symbol',
+                'source': 'round_json',
+                'layout': {
+                  'icon-image': ['get', 'disc_name'],
+                  'icon-size': 0.2,
+                  'icon-allow-overlap': true,
+                  'icon-ignore-placement': true},
+                  'filter': ['==', 'thing', 'disc']})
+              );
+
+            const layers = ['tees', 'pins', 'throws', 'discs'];
+            layers.forEach(function (item, index) {
+              document.getElementById(item).addEventListener('change', function (e) {
+              map.setLayoutProperty(
+                item,
+                'visibility',
+                e.target.checked ? 'visible' : 'none'
+              );
+              });
+            });
+
+            
+
+
+          }
+          );
+      });
+
+      // });
+    </script>
+  </body>
+  </html>
